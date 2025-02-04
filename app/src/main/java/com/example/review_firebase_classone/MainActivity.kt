@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.review_firebase_classone.ui.theme.ReviewFirebaseClassOneTheme
+import com.google.firebase.Firebase
+import com.google.firebase.FirebaseNetworkException
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
