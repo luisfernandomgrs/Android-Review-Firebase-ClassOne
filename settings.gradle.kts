@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Review-Firebase-ClassOne"
+rootProject.name = "Firebase Class One"
 include(":app")
