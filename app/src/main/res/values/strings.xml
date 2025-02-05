@@ -10,4 +10,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="title_form_subscribe">Cadastre-se</string>
+    <string name="hint_text_email">Digite seu e-mail</string>
+    <string name="hint_text_password">Digite sua senha</string>
+    <string name="button_subscribe_caption">Cadastrar</string>
 </resources>
