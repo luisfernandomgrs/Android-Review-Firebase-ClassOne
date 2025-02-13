@@ -5,5 +5,6 @@ This is a project to review about use of Google Services to provide Authenticati
 ```
 
 ## I'm here... 🧑‍🚀
-![image](https://github.com/user-attachments/assets/c458f474-b2ca-4d3a-8371-778b9d056261)
+![image](https://github.com/user-attachments/assets/63153e43-afe3-458b-ab6b-9bc119e09299)
+
 
