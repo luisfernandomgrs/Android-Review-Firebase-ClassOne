@@ -26,7 +26,7 @@ class FormSubscribe : AppCompatActivity() {
         binding = ActivityFormSubscribeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonLogin.setOnClickListener { view ->
+        binding.buttonSubscribe.setOnClickListener { view ->
             val edit_email = binding.editEmail.text.toString()
             val edit_password = binding.editPassword.text.toString()
 

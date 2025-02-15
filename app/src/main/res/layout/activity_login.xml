@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.subscribe.FormSubscribe"
+    tools:context=".ui.login.LoginActivity"
     android:background="@color/light_gray"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_form_subscribe"
+        android:text="@string/title_form_login"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@android:color/holo_green_dark"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         />
@@ -50,16 +49,28 @@
         />
 
     <Button
-        android:id="@+id/buttonSubscribe"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_subscribe_caption"
+        android:text= "@string/button_login_caption"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:padding="15dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:layout_margin="20dp"
         />
+
+    <TextView
+        android:id="@+id/linkToSubscribeForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_form_login_subscribe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/light_red"
+        android:layout_gravity="center"
+        />
+
 </LinearLayout>

@@ -14,4 +14,8 @@
     <string name="hint_text_email">Digite seu e-mail</string>
     <string name="hint_text_password">Digite sua senha</string>
     <string name="button_subscribe_caption">Cadastrar</string>
+
+    <string name="title_form_login">Account User</string>
+    <string name="button_login_caption">Login</string>
+    <string name="title_form_login_subscribe">Create a new account</string>
 </resources>
