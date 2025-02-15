@@ -38,6 +38,10 @@ class FormSubscribe : AppCompatActivity() {
             else {
                 auth.createUserWithEmailAndPassword(edit_email, edit_password).addOnCompleteListener { authResult ->
                     if (authResult.isSuccessful) {
+                        // clearing fields after successful subscribe
+                        binding.editEmail.setText("")
+                        binding.editPassword.setText("")
+
                         val snackbar = Snackbar.make(view, "User registered successfully", Snackbar.LENGTH_INDEFINITE)
                         snackbar.setBackgroundTint(Color.BLUE)
                         snackbar.show()
