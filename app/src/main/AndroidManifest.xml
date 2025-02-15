@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FirebaseClassOne"
         tools:targetApi="31">
         <activity
+            android:name=".ui.MainActivity.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.subscribe.FormSubscribe"
             android:exported="false" />
         <activity
