@@ -9,7 +9,12 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.review_firebase_classone.R
 import com.example.review_firebase_classone.databinding.ActivityFormSubscribeBinding
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException
+import kotlinx.coroutines.handleCoroutineException
 
 class FormSubscribe : AppCompatActivity() {
     lateinit var binding : ActivityFormSubscribeBinding
@@ -37,6 +42,17 @@ class FormSubscribe : AppCompatActivity() {
                         snackbar.setBackgroundTint(Color.BLUE)
                         snackbar.show()
                     }
+                }.addOnFailureListener { exception ->
+                    val messageError = when(exception) {
+                        is FirebaseAuthWeakPasswordException -> "Password with 6 or more characters, is required!"
+                        is FirebaseAuthInvalidCredentialsException -> "Invalid Email"
+                        is FirebaseNetworkException -> "Connection Failed"
+                        else -> "Subscribe Failed"
+                    }
+
+                    val snackbar = Snackbar.make(view, messageError, Snackbar.LENGTH_SHORT)
+                    snackbar.setBackgroundTint(Color.RED)
+                    snackbar.show()
                 }
 
             }
